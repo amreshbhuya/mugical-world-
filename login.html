@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Musical world 🎻</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: aliceblue;
+    }
+    
+    .container {
+        width:100%; 
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(139, 139, 139, 0.824);
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #11a71b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    
+    
+    .message {
+        text-align: center;
+    }
+    form {
+        margin: 30px auto;
+        padding: 15px;
+        background: #222; /* Dark grey background for the form */
+        border-radius: 8px;
+        width:92%; /* Adjust width as per design requirements */
+        height: 400%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle white shadow for depth */
+        text-align: center;
+        display: block;
+    }
+    
+    .x{
+
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 1rem rgb(62, 62, 62);
+        margin-top: 2rem;
+        
+    }
+    .x:hover{
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0 8px 16px rgba(103, 103, 103, 0.3); /* Deeper shadow on hover */
+    }
+    #main{
+        color:#f0f0f0;
+         font-size:30px;
+          background:transparent;
+          text-decoration: none;
+          padding: 10px;
+          border-radius:10px;
+          width:98%; 
+    }
+    button:hover{
+        transform: scale(1.005); /* Slight zoom on hover */
+        box-shadow: 0 8px 16px rgba(103, 103, 103, 0.3); /* Deeper shadow on hover */
+        background-color: #09b923;
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    a:hover{
+        text-shadow: 0 0 10px white;
+    }
+    .song{
+        display: flex;
+        padding: 5px;
+        gap: 20px;
+        width:100%; 
+    }
+    @media (max-width: 768px) {
+        iframe {
+          max-width: 100%; /* Ensure iframes are responsive on smaller screens */
+          background-color: #000000;
+        }
+      }
+    </style>
+   
+<body>
+    
+<div class="auth-form" id="signupForm" style="display:none;">
+    <h2>Sign Up-Musical world 🎻</h2>
+    <form onsubmit="handleSignup(event)">
+        <input type="text" id="signupName" placeholder="Name" required><br>
+        <input type="email" id="signupEmail" placeholder="Email" required><br>
+        <input type="password" id="signupPassword" placeholder="Password" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" onclick="showLoginForm()">Log In</a></p>
+</div>
+
+<div class="auth-form" id="loginForm">
+    <h2>Log In-Musical world 🎻</h2>
+    <form onsubmit="handleLogin(event)">
+        <input type="email" id="loginEmail" placeholder="Email" required><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br>
+        <button type="submit">Log In</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="showSignupForm()">Sign Up</a></p>
+</div>
+
+<div class="user-profile" id="userProfile" style="display: none;">
+    <h2>Welcome, Dear <span id="userName"></span>!</h2>
+    <button onclick="logout()">Log Out</button>
+    
+</div>
+                <button id= "main" ><a href="index.html" style="color:#ccc" class="button"><i class="fas fa-sign-in-alt"></i>Musical world🎻</a></button>
+                <div class="song">
+                <a href="RamLeela.html"  rel="noopener noreferrer"><img class="x"  src="RamLeela//RamLeela.png" alt="Album Cover"></a>
+                <a href="qala.html"  rel="noopener noreferrer"><img class="x"  src="qala//qala.png" alt="Album Cover"></a>
+                <a href="party.html"  rel="noopener noreferrer"><img class="x"  src="party//party.png" alt="Album Cover"></a>
+                <a href="Krishna.html"  rel="noopener noreferrer"><img class="x"  src="Krishna\\kri4.png" alt="Album Cover"></a>
+         
+                <a href="bhajan.html"  rel="noopener noreferrer"><img class="x"  src="bhajan\\bhajan.png" alt="Album Cover"></a>
+                
+                <a href="O_Re_piya.html"  rel="noopener noreferrer"><img class="x"  src="O Re Piya.png" alt="Album Cover"></a>
+                <a href="alia.html"  rel="noopener noreferrer"><img class="x"  src="alia.png" alt="Album Cover"></a>
+            </div>
+<script src="script9.js"></script>
+</body>
+</html>
